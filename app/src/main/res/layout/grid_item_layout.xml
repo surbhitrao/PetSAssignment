@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    card_view:cardCornerRadius="0dp"
+    tools:layout_editor_absoluteX="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp">
+
+        <ImageView
+            android:id="@+id/grid_item_image"
+            android:layout_width="101dp"
+            android:layout_height="135dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="11dp"
+            android:scaleType="matrix" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="248dp"
+            android:layout_height="71dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/grid_item_title"
+            android:layout_marginEnd="13dp"
+            android:fontFamily="@font/myfont"
+            android:gravity="center"
+            android:maxLines="4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/grid_item_title"
+            android:layout_width="277dp"
+            android:fontFamily="@font/myfont"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/grid_item_image"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="dsfsdf"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/grid_item_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="2dp"
+            android:capitalize="words"
+            android:fontFamily="@font/myfont"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="92dp"
+            android:fontFamily="@font/myfont"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/rati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/myfont"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/date"
+            android:layout_marginStart="133dp"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
