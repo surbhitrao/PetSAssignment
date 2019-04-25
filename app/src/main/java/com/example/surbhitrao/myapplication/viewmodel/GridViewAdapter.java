@@ -53,8 +53,8 @@ public class GridViewAdapter extends ArrayAdapter<GridItem> {
             holder.titleTextView = (TextView) row.findViewById(R.id.grid_item_title);
             holder.imageView = (ImageView) row.findViewById(R.id.grid_item_image);
             holder.detail= (TextView) row.findViewById(R.id.details);
-            holder.rat= (TextView) row.findViewById(R.id.rati);
-            holder.date= (TextView) row.findViewById(R.id.date);
+            holder.rat= (TextView) row.findViewById(R.id.budg);
+            holder.date= (TextView) row.findViewById(R.id.rev);
             holder.lang= (TextView) row.findViewById(R.id.lan);
 
             row.setTag(holder);

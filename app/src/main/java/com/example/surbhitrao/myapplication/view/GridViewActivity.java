@@ -75,6 +75,7 @@ public class GridViewActivity extends AppCompatActivity {
                                putExtra("votes", item.getVotes()).
                                putExtra("r_dates", item.getR_date()).
                                putExtra("backd", item.getBackdr()).
+                               putExtra("id", item.getId()).
 
 
                                putExtra("image", item.getImage());
@@ -214,6 +215,9 @@ AsyncHttpTask o=new AsyncHttpTask();
                 String lang=post.optString("original_language");
                 item.setLang(lang);
 
+                String id=post.optString("id");
+                item.setId(id);
+
 
                 String bac=post.optString("backdrop_path");
                 String imager="http://image.tmdb.org/t/p/w500/";
@@ -221,7 +225,7 @@ AsyncHttpTask o=new AsyncHttpTask();
                 item.setBackdr((imaget));
 
 
-                item.setLang(lang);
+            //    item.setLang(lang);
 
                 mGridData.add(item);}
             } catch (JSONException e1) {

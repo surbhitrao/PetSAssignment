@@ -5,7 +5,7 @@ package com.example.surbhitrao.myapplication.model;
  * Created by Surbhit Rao on 20-02-2016.
  */
 
-public class GridItem {
+public class DetailItem {
     private String image;
     private String title;
     private String overview;
@@ -13,12 +13,10 @@ public class GridItem {
     private String r_date;
     private String lang;
     private String backdr;
-    private String id;
 
 
 
-
-    public GridItem() {
+    public DetailItem() {
         super();
     }
 
@@ -75,13 +73,5 @@ public class GridItem {
 
     public void setBackdr(String backdr) {
         this.backdr = backdr;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 }
